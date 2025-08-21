@@ -12,14 +12,6 @@ return {
       },
 
       {
-        "<C-f5>",
-        function()
-          require("dap").terminate()
-        end,
-        desc = "终止程序",
-      },
-
-      {
         "<f7>",
         function()
           require("dap").step_over()
@@ -42,6 +34,15 @@ return {
         end,
         desc = "步出",
       },
+
+      {
+        "<F9>",
+        function()
+          require("dap").continue()
+        end,
+        desc = "Run/Continue",
+      },
+
       {
         "<leader>dB",
         function()
